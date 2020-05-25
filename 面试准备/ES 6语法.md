@@ -92,9 +92,11 @@ ES5 的继承
 
 ES6 的继承
 
-1、现将父类实例对象的属性和方法放在this上；
+1、先用super 实现一个父类对象的this；
 
-2、在将this指向新的实例对象；
+2、再通过子类的构造函数修饰this，让this指向子类实例；
+
+3、子类就可以继承父类的全部属性
 
 ![image-20200307172735213](/Users/franklin/Library/Application Support/typora-user-images/image-20200307172735213.png)
 
